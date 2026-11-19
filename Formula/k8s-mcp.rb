@@ -1,25 +1,25 @@
 class K8sMcp < Formula
   desc "Safe, read-only-by-default MCP server for troubleshooting any Kubernetes cluster"
   homepage "https://github.com/riseno/k8s-mcp"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.0/k8s-mcp-server-aarch64-apple-darwin.tar.xz"
-      sha256 "01a1efeae0a2329babae97b402ad1b4a739ed5412c41a695732b21777f9f99c6"
+      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.1/k8s-mcp-server-aarch64-apple-darwin.tar.xz"
+      sha256 "20fdc1edbad0f8d10d2607634740b14bc192c96c19450881fa6ddf4c81d893ca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.0/k8s-mcp-server-x86_64-apple-darwin.tar.xz"
-      sha256 "a8c41b994aeb44f2ecdee04fbb06683de0574b974fc434873cac956e898fffcc"
+      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.1/k8s-mcp-server-x86_64-apple-darwin.tar.xz"
+      sha256 "54698eeacbc5238c74727580c69aa512e7ffa92d94b59f55e155cedc46a027ad"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.0/k8s-mcp-server-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "8ec2e5e367b85ddbc8da06e917d70a816f800a31ded1e1ea42028e35331da78d"
+      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.1/k8s-mcp-server-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "bc68bb1b66c8603911c57ee5ee157756c40e95e58dd379e05df32a575c9aeacb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.0/k8s-mcp-server-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "7fcb486915d7265563f83cee95268ed5ed6f0d168214c8581df6b1abe918ea32"
+      url "https://github.com/riseno/k8s-mcp/releases/download/v0.4.1/k8s-mcp-server-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c82177ccda5e8ef7fce12141ab808db8ec6ab8d7b5505a89e6508290be59ae3a"
     end
   end
   license "Apache-2.0"
